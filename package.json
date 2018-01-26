@@ -1,6 +1,6 @@
 {
   "name": "mksql",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "make sql from object",
   "main": "index.js",
   "scripts": {
@@ -11,6 +11,10 @@
     "sql",
     "mksqk"
   ],
+  "repository": {
+    "type": "git",
+    "url":"https://github.com/tansuo1989/mksqk"
+  },
   "author": "tansuo1989",
   "license": "Apache-2.0",
   "dependencies": {
