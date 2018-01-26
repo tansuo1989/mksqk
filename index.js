@@ -36,9 +36,9 @@ exports.insert=function(table,obj){
       return sql;
 	}
 
-exports.select=function(table,fields,where){
+exports.select=function(table,fields,obj){
    var fields=fields?fields:"*";
-   var where=where?wheresql(obj):"";
+   var where=obj?wheresql(obj):"";
    var sql="select "+filter(fields)+" from "+filter(table)+where;
    return sql;
 }
