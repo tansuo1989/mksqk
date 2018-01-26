@@ -34,4 +34,3 @@
 ```
 # todo:
  * delete 和 update 的时候，当 where 条件不成立时，考虑报错
- * 添加 pdo 的对象绑定sql语句的方式
