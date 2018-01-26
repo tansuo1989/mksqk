@@ -1,7 +1,7 @@
 {
   "name": "mksql",
-  "version": "1.0.6",
-  "description": "make sql from object",
+  "version": "1.0.7",
+  "description": "easy to make sql",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -13,7 +13,7 @@
   ],
   "repository": {
     "type": "git",
-    "url":"https://github.com/tansuo1989/mksqk"
+    "url":"https://github.com/tansuo1989/mksql"
   },
   "author": "tansuo1989",
   "license": "Apache-2.0",
