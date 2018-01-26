@@ -1,4 +1,4 @@
-#使用方法
+# 使用方法
 1. 引入mksql
 ``` javascript
     var mk=require("mksql");
@@ -27,7 +27,7 @@
     var sql=mk.delete("table",where);
 
     var sql=mk.bind("select * from table where id=:id and name=:name",{id:3,name:"lilei"});
-    
+
 ```
 4. 直接使用conn.query 方法：
 ``` javascript
