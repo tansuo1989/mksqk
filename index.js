@@ -62,3 +62,12 @@ exports.delete=function(table,where){
   if(!where){return false};
   return "delete from "+filter(table)+wheresql(where);
 }
+
+exports.bind=function(sql,obj){
+  var str=sql;
+  if(!obj){return str;}
+  for(var i in obj){
+    str=str.replace(":"+i,"\""+filter(obj[i])+"\"");
+  }
+  return str;
+}
