@@ -4,7 +4,8 @@ var mysql=require("mysql");
 function wheresql(obj){
   var sql="";
 	for(var i in obj){
-		sql+=" "+i+"='"+obj[i]+"' and";
+    sql+=" "+i+"='"+filter(obj[i])
+    +"' and";
     }
     if(!sql){return "";}
 	sql=sql.substring(0,sql.length-4);
@@ -12,7 +13,8 @@ function wheresql(obj){
 }
 
 function filter(sql){
-	return sql.replace("'","\'").replace('"','\"');
+  if(typeof sql!="string"){return sql;}
+	return sql.replace("'","\\'").replace('"','\\"');
 }
 
 exports.filter=filter;
