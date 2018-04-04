@@ -13,8 +13,7 @@ function wheresql(obj){
 }
 
 function filter(sql){
-  if(typeof sql!="string"){return sql;}
-	return sql.replace("'","\\'").replace('"','\\"');
+  return mysql.escape(sql);
 }
 
 exports.filter=filter;

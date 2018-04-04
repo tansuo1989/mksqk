@@ -1,6 +1,6 @@
 {
   "name": "mksql",
-  "version": "1.0.10",
+  "version": "1.0.11",
   "description": "easy to make sql",
   "main": "index.js",
   "scripts": {
