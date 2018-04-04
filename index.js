@@ -13,7 +13,8 @@ function wheresql(obj){
 }
 
 function filter(sql){
-  return mysql.escape(sql);
+  // return mysql.escape(sql);//有些情况会出问题，先不过滤
+  return sql;
 }
 
 exports.filter=filter;
