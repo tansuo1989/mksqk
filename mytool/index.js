@@ -3,15 +3,24 @@
 let fs=require("fs");
 
 function is_dir(dir){
+    if(is_link(dir)){
+        return false;
+    }
     var stat=fs.statSync(dir);
     return stat?stat.isDirectory():false;
 }
 function is_file(dir){
+    if(is_link(dir)){
+        return false;
+    }
     var stat=fs.statSync(dir);
     return stat?stat.isFile():false;
 }
 function size(file){
     return fs.statSync(file).size;
+}
+function is_link(dir){
+    return fs.lstatSync(dir).isSymbolicLink();
 }
 // var p=argv.get_params();
 // console.log(p);
@@ -23,7 +32,6 @@ function read_dir(dir){
     function read(dir){
         fs.readdirSync(dir).forEach(v=>{
             var tem=dir+"/"+v;
-            console.log(tem)
             if(is_dir(tem)){
                 read(tem);
             }else if(is_file(tem)){
