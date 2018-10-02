@@ -9,7 +9,7 @@ index.js中写入简单的代码：
 ```javascript
   console.log("I am aa");
 ```
-如果不加第一委，运行后可能会出现 console未定义的情况，因为没有指定nodejs的运行环境
+如果不加第一行，运行后可能会出现 console未定义的情况，因为没有指定nodejs为运行环境
 
 2. package.json 中的字段：
 ```json
@@ -38,6 +38,9 @@ aa #即可看到  I am aa
 
 4. 获取命令行参数：
 可以用 minimist 包:cnpm i minimist --save
+或者：
+process.argv.splice(2)
+
 
 5. 
 

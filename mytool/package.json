@@ -7,6 +7,6 @@
     "mytool": "index.js"
   },
   "dependencies": {
-    "myask": "^1.0.7"
+    // "myask": "^1.0.7"
   }
 }
