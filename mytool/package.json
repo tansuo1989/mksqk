@@ -1,9 +1,0 @@
-{
-  "name": "mytool",
-  "version": "1.0.0",
-  "description": "l",
-  "main": "index.js",
-  "bin": {
-    "mytool": "index.js"
-  }
-}

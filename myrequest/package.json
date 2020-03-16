@@ -1,5 +1,9 @@
 {
     "name": "@tansuo19/myrequest",
     "version": "0.1.1",
-    "description": "easy to use http,simple request"
+    "description": "easy to use http,simple request",
+    "repository": {
+        "type": "git",
+        "url":"https://github.com/tansuo1989/npm-lib"
+      },
 }

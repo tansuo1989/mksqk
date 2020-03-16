@@ -1,0 +1,23 @@
+{
+  "name": "qq-wubi",
+  "version": "1.0.0",
+  "description": "qq-wubi code to Chinese",
+  "main": "index.js",
+  "scripts": {
+    "test": "node ./test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tansuo1989/npm-lib.git"
+  },
+  "keywords": [
+    "wubi",
+    "qq-wubi"
+  ],
+  "author": "tansuo1989",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/tansuo1989/npm-lib/issues"
+  },
+  "homepage": "https://github.com/tansuo1989/npm-lib#readme"
+}

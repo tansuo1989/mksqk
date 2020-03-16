@@ -1,6 +1,6 @@
 {
   "name": "mksql",
-  "version": "1.0.31",
+  "version": "1.0.32",
   "description": "easy to make sql",
   "main": "index.js",
   "scripts": {
@@ -13,7 +13,7 @@
   ],
   "repository": {
     "type": "git",
-    "url":"https://github.com/tansuo1989/mksql"
+    "url":"https://github.com/tansuo1989/npm-lib"
   },
   "author": "tansuo1989",
   "license": "Apache-2.0",
